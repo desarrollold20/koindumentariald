@@ -19,15 +19,16 @@ header nav div a img{
 .cabeza nav{
     padding: 20px;
     height: 100px;
-    width: 100px;
+    width: 100px; 
+    background: linear-gradient(to start, green, rgba(0, 128, 0, 0.39) );
     color: rgb(253, 253, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    
 
-
-}
+} 
 
 .cabeza nav ul{
     list-style: none;
@@ -37,46 +38,36 @@ header nav div a img{
 
 }
 
-.cabeza nav ul li a{
+.cabeza nav div div ul li a{
     text-decoration: none;
     color: #f1dddd;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 900;
     margin: 20px;
-    
+    transition: 2s;
 
+}
+
+.cabeza nav div ul li a:hover{
+    color: rgba(234, 17, 17, 0.965);
+    text-decoration: overline;
 }
 
 
 
 
-.mi-compra{
-    font-size: 10px;
-    margin: 10px;
-    padding: 10px;
-    color: rgb(2 2 29);
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-}
 
 
-
-.micompra-icon{
-    width: 30px;
-    height: 30px;
-    
-}
 
 
 
 /*------------------seccion de banners----------------------------*/
 
-.banner{
+.banner-container{
     background: rgba(101, 90, 90, 0.96);
     background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
     background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-
+    transform: scale(1.1);
 
 
     /*preferi en esta seccion no generar columnas*/
@@ -87,6 +78,10 @@ header nav div a img{
         "banner-imgvenum"
         "banner-imgtwins"
         "banner-imgbox";
+} 
+
+.banner-container div:hover{
+    transition: 1s;
 }
 
 .banner-card img{
@@ -156,12 +151,10 @@ header nav div a img{
 
 }
 
-.ofertas-titulo{
-    color: white;
-    text-shadow: 4px 11px 2px rgba(0, 0, 0, 0.6);
-}
-.ofertas-card{
-    background-color: beige;
+
+
+.ofertas-container{
+    background-image: linear-gradient( to botton, rgb(45, 119, 45), rgb(151, 118, 118) );
     border-radius: 15px;
     width: 350px;
     padding: 2px;
@@ -169,6 +162,13 @@ header nav div a img{
     border-radius: 40px 40px 40px 40px;
     -webkit-border-radius: 40px 40px 40px 40px;
     -moz-border-radius: 40px 40px 40px 40px;
+    transition: 1.5s;
+    transition-timing-function: 0.1;
+} 
+
+.ofertas div:hover{
+    transform: scale(2s);
+    
 }
 
 /* .ofertas div img{
@@ -193,14 +193,19 @@ header nav div a img{
 }
 
 .ofertas-descrip{
-    font-size: 20px;
+    font-size: 20px; 
+    
 
 
 }
 
 .ofertas-boton{
     text-decoration: none;
+    transition: 1s;
+} 
 
+.ofertas-boton:hover{
+    color: bisque;
 }
 
 

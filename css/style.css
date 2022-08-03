@@ -13,44 +13,16 @@ header nav div a img{
 }
 
 
-
-
-
-.cabeza nav{
-    padding: 20px;
-    height: 100px;
-    width: 100px; 
-    background: linear-gradient(to start, green, rgba(0, 128, 0, 0.39) );
-    color: rgb(253, 253, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; 
-    
-
-} 
-
-.cabeza nav ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    
-
+.container-fluid{
+    background: #f1dddd;
+    background: linear-gradient(90deg, #f1dddd 0%, #767070 80%);
+    background: -webkit-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
+    background: -moz-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
 }
 
-.cabeza nav div div ul li a{
-    text-decoration: none;
-    color: #f1dddd;
-    font-size: 40px;
-    font-weight: 900;
-    margin: 20px;
-    transition: 2s;
 
-}
-
-.cabeza nav div ul li a:hover{
-    color: rgba(234, 17, 17, 0.965);
-    text-decoration: overline;
+.navbar-nav{
+    font-size: 30px;
 }
 
 

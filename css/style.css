@@ -7,9 +7,7 @@
 }
 
 /*-------header-INDEX-----*/ 
-.header{   
-    width: 30%;
-}
+
 header nav div a img{
     width: 200px;
     height: 200px;
@@ -22,7 +20,7 @@ header nav div a img{
 
 
 .navbar-nav{
-    font-size: 24px;
+    font-size: 25px;
 }
 
 
@@ -35,8 +33,8 @@ header nav div a img{
 
 /*------------------seccion de banners----------------------------*/
 
-.banner-container{
-    background: rgba(101, 90, 90, 0.96);
+.banner{ 
+    background: rgba(28, 74, 34, 0.164);
     background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
     background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
     transform: scale(1.1);
@@ -52,8 +50,13 @@ header nav div a img{
         "banner-imgbox";
 } 
 
-.banner-container div:hover{
-    transition: 1s;
+.banner-card h1{
+    align-items: center;
+    display: flex;
+}
+
+.banner-card h1{
+    text-align: center;
 }
 
 .banner-card img{
@@ -96,97 +99,31 @@ header nav div a img{
 /*------cards--------*/
 
 .ofertas{
-    width: 100%;
-    margin: 50px;
-    text-align: center;
-    align-items: center;
-    margin: 0px;
-    background: rgba(101, 90, 90, 0.96);
-    background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    background: -moz-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-
-
-    /*-----------grillas-----------------*/
-    display: grid;
-
-    /*--------columnas------------------*/
-    grid-template-columns: 1fr 1fr 1fr;
-
-    /*--------filas------------------*/
-    grid-auto-flow: 250px;
-    gap: 5px;
-    grid-template-areas:
-        "ofertas-card"
-    ;
-
+    margin: 70px;
+    padding-bottom: 10px;
 }
-
-
-
-.ofertas-container{
-    background-image: linear-gradient( to botton, rgb(45, 119, 45), rgb(151, 118, 118) );
-    border-radius: 15px;
-    width: 350px;
-    padding: 2px;
-    margin: 0px;
-    border-radius: 40px 40px 40px 40px;
-    -webkit-border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px;
-    transition: 1.5s;
-    transition-timing-function: 0.1;
-} 
-
-.ofertas div:hover{
-    transform: scale(2s);
-    
-}
-
-/* .ofertas div img{
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-} */
-
-
-
-
-.ofertas-imagen{
+.card{
     width: 300px;
-    height: 300px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    padding: 10px;
-    margin: 5px;
+    height: 300px; 
+    padding: 40px;
     
-
-
 }
 
-.ofertas-descrip{
-    font-size: 20px; 
-    
-
-
+.card img{
+    max-width: 250px;
+    height: 250px;
 }
 
-.ofertas-boton{
-    text-decoration: none;
-    transition: 1s;
-} 
 
-.ofertas-boton:hover{
-    color: bisque;
-}
+
+
+
 
 
 
 /*------------------PAGINA DE PRODUCTOS----------------*/
 
 
-.productos{
-    width: ;
-}
 
 
 
@@ -216,60 +153,7 @@ header nav div a img{
 }
 /*-------------PAGINA DE SERVICIOS-------*/
 
-/* .servicios{
-    width: 100%;
-    background: rgba(101, 90, 90, 0.96);
-    background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    background: -moz-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    font-family: "Poppins", sans-serif;
-    color: whitesmoke;
-    display: flex;
 
-}
-
-.servicios nav{
-    padding: 20px;
-    height: 100px;
-    width: 100px;
-    color: rgb(253, 253, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
-.servicios nav ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    
-    
-
-}
-.servicios nav ul li a{
-    text-decoration: none;
-    color: #f1dddd;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 20px; 
-    grid-template-areas: 
-    "servicios" 
-    "backoffice";
-    
-
-} 
-
-.servicios img{
-    width: 250px;
-    height: 250px;
-} 
-
-.backoffice{
-    width: 300px;
-    height: 100%;
-    background-color: #a9c3a9;
-} */
 
 
 
@@ -407,7 +291,7 @@ footer img{
 /*-------- MEDIA QUERIES--------*/
 
 
-@media screen and (max-width:895px){
+/* @media screen and (max-width:895px){
     .cabeza nav{
         flex-direction: column;
         
@@ -565,4 +449,4 @@ footer img{
     }
 
     
-}
+} 

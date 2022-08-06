@@ -111,7 +111,8 @@ header nav div a img{
 
 .card img{
     max-width: 250px;
-    height: 250px;
+    height: 250px; 
+    
 }
 
 
@@ -440,7 +441,7 @@ footer img{
 
 
 /*--------SERVICIOS--------*/
-@media screen and (max-width:873px){
+@media (max-width:873px) and (min-width:400px){
     .servicios{
         flex-direction: column;
         

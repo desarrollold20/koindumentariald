@@ -32,43 +32,34 @@ header nav div a img{
 
 
 /*------------------seccion de banners----------------------------*/
-
+.main{
+    width: 600px;
+    height: 600px;
+}
 .banner{ 
     background: rgba(28, 74, 34, 0.164);
     background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
     background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    transform: scale(1.1);
-
-
-    /*preferi en esta seccion no generar columnas*/
-
-    /*-----generamos filas----------*/
-    grid-template-rows: 150px 100x 150px 150px;
-    grid-template-areas:
-        "banner-imgvenum"
-        "banner-imgtwins"
-        "banner-imgbox";
+    
 } 
 
-.banner-card h1{
-    align-items: center;
-    display: flex;
+
+.banner-tittle{
+    text-align: center;
+    padding: 30px;
 }
 
-.banner-card h1{
-    text-align: center;
-}
+
 
 .banner-card img{
-    object-fit: cover;
-    width: 1000px;
-    height: 364px;
+    width: 500px;
+    height: 300px;
 
 }
 
 .banner-imgvenum{
-    width: 1000px;
-    height: 364px;
+    width: 100%;
+    height: 300px;
     margin: 0px;
     border-radius: 40px 40px 40px 40px;
     -webkit-border-radius: 40px 40px 40px 40px;
@@ -77,8 +68,8 @@ header nav div a img{
 }
 
 .banner-imgtwins{
-    width: 1000px;
-    height: 364px;
+    width: 100%;
+    height: 300px;
     margin: 0px;
     border-radius: 40px 40px 40px 40px;
     -webkit-border-radius: 40px 40px 40px 40px;
@@ -86,8 +77,8 @@ header nav div a img{
 }
 
 .banner-imgbox{
-    width: 1000px;
-    height: 364px;
+    width: 100%;
+    height: 300px;
     margin: 0px;
     border-radius: 40px 40px 40px 40px;
     -webkit-border-radius: 40px 40px 40px 40px;
@@ -98,25 +89,31 @@ header nav div a img{
 
 /*------cards--------*/
 
-.ofertas{
-    margin: 70px;
-    padding-bottom: 10px;
-}
+
+
 .card{
-    width: 300px;
-    height: 300px; 
-    padding: 40px;
-    
+    width: 350px;
+    height: 350px; 
+    text-align: center;
+    align-items: center;
+    display: grid; 
+    padding: auto; 
+    background-color: beige;
+    justify-content: center;
 }
 
 .card img{
-    max-width: 250px;
+    width: 250px;
     height: 250px; 
+    align-items: center;
     
 }
 
 
-
+.card{
+    grid-column: 1fr 1fr ;
+    grid-row: 300px 300px 300px 300px;
+}
 
 
 
@@ -289,90 +286,12 @@ footer img{
 
 
 
-/*-------- MEDIA QUERIES--------*/
+/*-------- MEDIA QUERIES INDEX--------*/ 
 
-
-/* @media screen and (max-width:895px){
-    .cabeza nav{
-        flex-direction: column;
-        
-        
-
-    }
-}
-
-@media screen and (max-width:537px){
-    .cabeza-logo{
-        width: 150px;
-        height: 150px;
-    }
-}
-
-@media screen and (max-width:1015px){
-    .mi-compra{
-        flex-direction: column;
-        padding: 0;
-    }
-
-}
-
-@media screen and (max-width:535px){
-    .mi-compra{
-        flex-direction: row;
-    }
-}
-
-
-@media screen and (max-width:389px){
-    .mi-compra{
-        width: 25px;
-        padding: 0;
-    }
-}
+@media
 
 
 
-
-@media screen and (max-width:1015px){
-    .banner-imgvenum{
-        width: 100%;
-        height: 25%;
-
-    }
-}
-
-@media screen and (max-width:1015px){
-    .banner-imgtwins{
-        width: 100%;
-        height: 25%;
-
-    }
-
-}
-
-@media screen and (max-width:1015px){
-    .banner-imgbox{
-        width: 100%;
-        height: 25%;
-
-
-    }
-
-}
-
-@media screen and (max-width:1063px){
-    .ofertas-container{
-        grid-template-columns: 1fr 1fr;
-        grid-auto-flow: 150px;
-    }
-}
-
-@media screen and (max-width:709px){
-    .ofertas-container{
-        grid-template-columns: 1fr;
-        grid-row: 200px;
-    }
-}
 
 
 
@@ -380,59 +299,14 @@ footer img{
 
 /*----------- MEDIA QUERIES PARA LA PAGINA DE CONTACTOS -------*/
 
-@media screen and (max-width:1075px){
-    .cab-contact{
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width:(403px)){
-    .cab-contact{
-        display: grid;
-
-        grid-template-columns: 1fr;
-        grid-auto-flow: column;
-    }
-}
-
-@media screen and (max-width:769px){
-    .cab-contact nav ul li{
-        flex-direction: column;
-        text-align: center;
-        display: inline-block
-    }
-}
-
-@media screen and (max-width:1075px){
-
-    .identify{
-
-        grid-template-columns: 1fr, 1fr;
-        grid-auto-flow: 250px;
-        padding-inline-end: 30px;
-
-    }
-}
-
-@media screen and (max-width:559px){
-    .identify{
-        padding: 30px;
-    }
-}
-
-
-@media screen and (max-width:507px){
-    .contact-iframe{
-        margin-right: 15px;
-    }
-} 
 
 
 /* ------------MEDIA QUERIES PRODUCTOS--------*/ 
 
-@media screen and (max-width:873px){
-    .arriba{
+@media screen (max-width:800px) and (min-width:400px){
+    .productos{
         flex-direction: column;
+        
 
     }
 
@@ -441,13 +315,10 @@ footer img{
 
 
 /*--------SERVICIOS--------*/
-@media (max-width:873px) and (min-width:400px){
+@media (max-width:700px) and (min-width:400px){
     .servicios{
         flex-direction: column;
         
-        
-        
     }
+}  
 
-    
-} 

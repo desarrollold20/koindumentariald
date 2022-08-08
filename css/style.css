@@ -35,7 +35,10 @@ header nav div a img{
 .main{
     width: 600px;
     height: 600px;
+    margin: 2px;
 }
+
+
 .banner{ 
     background: rgba(28, 74, 34, 0.164);
     background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
@@ -46,7 +49,8 @@ header nav div a img{
 
 .banner-tittle{
     text-align: center;
-    padding: 30px;
+    padding: 50px;
+    color: rgb(255, 0, 0);
 }
 
 
@@ -60,7 +64,7 @@ header nav div a img{
 .banner-imgvenum{
     width: 100%;
     height: 300px;
-    margin: 0px;
+    margin: 2px;
     border-radius: 40px 40px 40px 40px;
     -webkit-border-radius: 40px 40px 40px 40px;
     -moz-border-radius: 40px 40px 40px 40px;
@@ -223,11 +227,10 @@ footer img{
 
 .identify{
     border: solid rgb(0, 0, 0) 2px;
-    width: 400px;
-    height: 400px;
-    margin: 10px;
-    padding: px;
-    justify-content: center;
+    width: 600px;
+    height: 600px;
+    align-items: center;
+    
 
 }
 
@@ -249,20 +252,30 @@ footer img{
 }
 
 .contact-wpp{
-    margin: 10px;
+    color: black;
 }
 
 .contact-red{
     padding: 30px;
-    grid-row: -3;
+    
 
+}
+
+/*-----SERVICIOS*/ 
+
+.backoffice{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
 
-
-
-
+.foot-serv{
+    width: 100%;
+    height: 450px;
+}
 
 
 
@@ -271,7 +284,10 @@ footer img{
 
 /* FOOTER CONTACTOS */
 
-
+.contact-foot{
+    width: 100%;
+    height: 200px;
+}
 
 
 
@@ -288,7 +304,7 @@ footer img{
 
 /*-------- MEDIA QUERIES INDEX--------*/ 
 
-@media
+
 
 
 
@@ -322,3 +338,37 @@ footer img{
     }
 }  
 
+/*-------PSEUDOELEMENTOS-------*/ 
+
+.card a::first-letter{
+    color: red;
+    font-size: 20px;
+} 
+
+h1::first-letter{
+    color: black;
+    font-size: 60px;
+}
+
+.card a::before{
+    content: "🛒";
+    
+
+}  
+
+
+/*---PSEUDO CLASES-------*/  
+
+.card a:hover{
+    color: black;
+
+}
+
+input{
+    outline: none;
+}
+
+input:focus{
+    border: 1px solid red;
+    border-radius: 5px;
+}

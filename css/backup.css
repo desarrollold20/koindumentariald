@@ -8,11 +8,12 @@
 
 /*-------header-INDEX-----*/ 
 
-header{
-    display: flex;
-    height: 100%;
-}
 
+
+header nav div a img{
+    width: 200px;
+    height: 150px;
+}
 
 
 .container-fluid{
@@ -36,7 +37,9 @@ header{
 
 
 /*------------------seccion de banners----------------------------*/
+.main{
 
+}
 
 
 .banner{ 
@@ -55,7 +58,10 @@ header{
 
 
 
+.banner-card img{
+    
 
+}
 
 .banner-imgvenum{
     width: 100%;
@@ -176,7 +182,26 @@ header{
     grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
 }
 
+.cont-uno{
 
+}
+.cont-uno{
+
+}.cont-uno{
+
+}
+.cont-uno{
+
+}.cont-uno{
+
+}
+.cont-uno{
+
+}
+
+.cont-uno{
+
+}
 
 
 
@@ -351,7 +376,7 @@ footer img{
 
 /*-------- MEDIA QUERIES INDEX--------*/ 
 
-
+@media and
 
 
 
@@ -370,13 +395,44 @@ footer img{
 
 
 /*--------SERVICIOS--------*/
-
+@media (max-width:700px) and (min-width:400px){
+    .servicios{
+        flex-direction: column;
+        
+    }
+}  
 
 /*-------PSEUDOELEMENTOS-------*/ 
 
+.ofertas a::first-letter{
+    color: red;
+    font-size: 20px;
+} 
 
+h1::first-letter{
+    color: black;
+    font-size: 60px;
+}
 
+.ofertas div a::before{
+    content: "🛒";
+    
+
+}  
 
 
 /*---PSEUDO CLASES-------*/  
 
+.ofertas div a:hover{
+    color: black;
+
+}
+
+input{
+    outline: none;
+}
+
+input:focus{
+    border: 1px solid red;
+    border-radius: 5px;
+}

@@ -8,11 +8,15 @@
 
 /*-------header-INDEX-----*/ 
 
-
+header{
+    display: flex;
+    height: 100%;
+}
 
 header nav div a img{
     width: 200px;
     height: 150px;
+    
 }
 
 

@@ -207,10 +207,35 @@ input {
     outline: none;
 }
 
+<<<<<<< HEAD
 input:focus {
     border: 1px solid red;
     border-radius: 5px;
 }  
+=======
+/*-------- MEDIA QUERIES INDEX--------*/ 
+
+@media
+
+
+
+
+
+
+
+
+/*----------- MEDIA QUERIES PARA LA PAGINA DE CONTACTOS -------*/
+
+
+
+/* ------------MEDIA QUERIES PRODUCTOS--------*/ 
+
+
+
+
+/*--------SERVICIOS--------*/
+
+>>>>>>> animaciones
 
 
 

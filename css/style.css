@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
-@charset "UTF-8";
+header{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(16deg, #043f04, rgba(0, 128, 0, 0.312));
+    
+}
 
 header .container-fluid {
-    background: linear-gradient(16deg, #043f04, rgba(0, 128, 0, 0.312));
+    
     width: 100%;
     height: 200px;
 }
@@ -203,4 +210,27 @@ input {
 input:focus {
     border: 1px solid red;
     border-radius: 5px;
+}  
+
+
+
+/*-------media queries*/ 
+
+
+@media screen and (max-width: 1075px) and (min-width :300px){
+    header{
+        padding: 10px;
+        margin: 5px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+} 
+
+@media (max-width: 851px){
+    .container-fluid{
+        width: 100px;
+        margin-bottom: 150px;
+        flex-wrap: nowrap;
+    }
 }

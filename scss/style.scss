@@ -1,8 +1,14 @@
+
+header{
+    display: flex;
+}
+
+
 header .container-fluid {
     background: linear-gradient(16deg, rgb(4, 63, 4), rgba(0, 128, 0, 0.312));
     width: 100%;
     height: 200px;
-
+    
     a img {
         width: 200px;
         height: 150px;
@@ -243,4 +249,13 @@ input {
 input:focus {
     border: 1px solid red;
     border-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 1075px){
+    header{
+        width: 80%;
+        flex-wrap: wrap;
+    }
 }

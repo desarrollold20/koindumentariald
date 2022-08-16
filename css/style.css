@@ -1,60 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&family=Gentium+Book+Plus:ital@0;1&family=Poppins:wght@200;300;400&family=Roboto+Condensed:ital,wght@0,300;1,300;1,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    background: linear-gradient(16deg, #043f04, rgba(0, 128, 0, 0.312));
-    
-}
+/*-------header-INDEX-----*/ 
 
-header .container-fluid {
-    
-    width: 100%;
+header nav div a img{
+    width: 200px;
     height: 200px;
 }
 
-header .container-fluid a img {
-    width: 200px;
-    height: 150px;
+
+.container-fluid{
+    background: linear-gradient(16deg, rgb(4, 63, 4), rgba(0, 128, 0, 0.312));
 }
 
-header .container-fluid .nav-link {
-    font-size: 30px;
+
+.navbar-nav{
+    font-size: 25px;
 }
 
-main .banner {
+
+
+
+
+
+
+
+
+/*------------------seccion de banners----------------------------*/
+.main{
+    width: 600px;
+    height: 600px;
+}
+.banner{ 
     background: rgba(28, 74, 34, 0.164);
     background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
     background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-}
+    
+} 
 
-main .banner .banner-tittle {
+
+.banner-tittle{
     text-align: center;
-    padding: 50px;
-    color: red;
+    padding: 30px;
 }
 
-main .banner .banner-card img {
+
+
+.banner-card img{
     width: 500px;
     height: 300px;
+
 }
 
-main .banner .banner-imgvenum {
+.banner-imgvenum{
     width: 100%;
     height: 300px;
-    margin: 2px;
+    margin: 0px;
     border-radius: 40px 40px 40px 40px;
     -webkit-border-radius: 40px 40px 40px 40px;
     -moz-border-radius: 40px 40px 40px 40px;
+
 }
 
-main .banner .banner-imgtwins {
+.banner-imgtwins{
     width: 100%;
     height: 300px;
     margin: 0px;
@@ -63,68 +76,111 @@ main .banner .banner-imgtwins {
     -moz-border-radius: 40px 40px 40px 40px;
 }
 
-main .banner .banner-imgbox {
+.banner-imgbox{
     width: 100%;
-    height: 700px;
+    height: 300px;
     margin: 0px;
     border-radius: 40px 40px 40px 40px;
     -webkit-border-radius: 40px 40px 40px 40px;
     -moz-border-radius: 40px 40px 40px 40px;
 }
 
-main .ofertas {
-    width: 100%;
-    height: 700px;
-    text-align: center;
-    background-color: beige;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px 400px 400px 400px;
-}
 
-main .ofertas div {
-    padding: 10px;
-    margin: 10px;
+
+/*------cards--------*/
+
+
+
+.card{
     width: 350px;
-    height: 300px;
+    height: 350px; 
+    text-align: center;
+    align-items: center;
+    display: grid; 
+    padding: auto; 
+    background-color: beige;
+    justify-content: center;
 }
 
-main .ofertas img {
+.card img{
     width: 250px;
+    height: 250px; 
+    align-items: center;
+    
+}
+
+
+.card{
+    grid-column: 1fr 1fr ;
+    grid-row: 300px 300px 300px 300px;
+}
+
+
+
+
+
+/*------------------PAGINA DE PRODUCTOS----------------*/
+
+
+
+
+
+.productos div{
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 15px;
+    background-color: beige;
+    
+}
+
+
+
+.productos div div{
+    border-radius: 15px;
+    background-color: rgb(228, 228, 222);
+    display: inline-block;
+    
+}
+
+.productos div div img{
+    width: 200px;
     height: 200px;
+    
+}
+/*-------------PAGINA DE SERVICIOS-------*/
+
+
+
+
+
+/*-----------footer----------*/
+footer{
+    background: #f1dddd;
+    background: linear-gradient(90deg, #f1dddd 0%, #767070 80%);
+    background: -webkit-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
+    background: -moz-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
 }
 
-main .ofertas a:hover {
-    color: black;
-}
-
-.pie-index {
-    background: rgba(101, 90, 90, 0.96);
-    background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    background: -moz-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    width: 100%;
-    height: 200px;
-}
-
-.pie-index h3 {
-    font-size: 30px;
-    width: 20px;
-    color: #485959;
-}
-
-.pie-index img {
+footer img{
     width: 60px;
     height: 60px;
 }
 
-/*-------------PAGINA DE CONTACTOS-*/
-.cab {
+/*------------------------- -------------*/
+
+
+
+/*------------------  PAGINA CONTACTOS -------------------- */
+
+.cab{
     width: 100vw;
     font-size: 300;
+
 }
 
-.cab .cab-nav {
+.cab-nav {
     width: 100%;
     background: rgba(101, 90, 90, 0.96);
     background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
@@ -140,18 +196,22 @@ main .ofertas a:hover {
     justify-content: space-between;
 }
 
-.cab .cab-nav img {
+
+
+.cab-nav img{
     width: 300px;
     max-height: 300px;
+
+
 }
 
-.cab .cab-nav ul {
+.cab-nav ul{
     font-size: 30px;
     text-decoration: none;
     text-align: end;
 }
 
-.cab .cab-nav li {
+.cab-nav ul li{
     list-style: none;
     display: inline-block;
     justify-content: center;
@@ -160,102 +220,72 @@ main .ofertas a:hover {
     flex-direction: column-reverse;
 }
 
-.identify {
-    border: solid black 2px;
-    width: 600px;
-    height: 600px;
-    align-items: center;
+
+.identify{
+    border: solid rgb(0, 0, 0) 2px;
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    padding: px;
+    justify-content: center;
+
 }
 
-.identify .identify-titulo {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.contact-iframe {
+.contact-iframe{
     width: 300px;
     height: 200px;
 }
 
-.contac-ubic {
+
+.identify-titulo{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-ubic{
     padding: 150px;
+    align-items: center;
+
+}
+
+.contact-wpp{
+    margin: 10px;
+}
+
+.contact-red{
+    padding: 30px;
+    grid-row: -3;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER CONTACTOS */
+
+
+
+
+
+
+
+
+
+.contact-wpp{
     align-items: center;
 }
 
-.contact-wpp {
-    color: black;
-}
 
-.contact-red {
-    padding: 30px;
-}
 
-h1::first-letter {
-    color: black;
-    font-size: 60px;
-}
 
-.ofertas div a::before {
-    content: "🛒";
-}
-
-.ofertas div a:hover {
-    color: black;
-}
-
-input {
-    outline: none;
-}
-
-<<<<<<< HEAD
-input:focus {
-    border: 1px solid red;
-    border-radius: 5px;
-}  
-=======
 /*-------- MEDIA QUERIES INDEX--------*/ 
 
 @media
-
-
-
-
-
-
-
-
-/*----------- MEDIA QUERIES PARA LA PAGINA DE CONTACTOS -------*/
-
-
-
-/* ------------MEDIA QUERIES PRODUCTOS--------*/ 
-
-
-
-
-/*--------SERVICIOS--------*/
-
->>>>>>> animaciones
-
-
-
-/*-------media queries*/ 
-
-
-@media screen and (max-width: 1075px) and (min-width :300px){
-    header{
-        padding: 10px;
-        margin: 5px;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-    }
-} 
-
-@media (max-width: 851px){
-    .container-fluid{
-        width: 100px;
-        margin-bottom: 150px;
-        flex-wrap: nowrap;
-    }
-}

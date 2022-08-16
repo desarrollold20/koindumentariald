@@ -20,7 +20,7 @@ header nav div a img{
 
 
 .navbar-nav{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
@@ -35,6 +35,7 @@ header nav div a img{
 .main{
     width: 600px;
     height: 600px;
+    margin: 0;
 }
 .banner{ 
     background: rgba(28, 74, 34, 0.164);
@@ -89,40 +90,59 @@ header nav div a img{
 
 /*------cards--------*/
 
-
-
-.card{
-    width: 350px;
-    height: 350px; 
-    text-align: center;
-    align-items: center;
-    display: grid; 
-    padding: auto; 
-    background-color: beige;
-    justify-content: center;
+.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 500px;
+    margin: 0;
 }
 
-.card img{
+
+
+
+
+.ofertas div{
     width: 250px;
-    height: 250px; 
+    height: 350px; 
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.ofertas div img{
+    width: 150px;
+    height: 150px; 
     align-items: center;
     
 }
 
 
-.card{
-    grid-column: 1fr 1fr ;
-    grid-row: 300px 300px 300px 300px;
+
+
+footer{
+    background: #f1dddd;
+    background: linear-gradient(90deg, #f1dddd 0%, #767070 80%);
+    background: -webkit-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
+    background: -moz-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
 }
 
+footer img{
+    width: 60px;
+    height: 60px;
+}
+
+/*------------------PAGINA PRODUCTOS----------------*/
 
 
-
-
-/*------------------PAGINA DE PRODUCTOS----------------*/
-
-
-
+.productos{
+    width: 100%;
+    height: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 300px 300px 300px;
+}
 
 
 .productos div{
@@ -140,7 +160,7 @@ header nav div a img{
 .productos div div{
     border-radius: 15px;
     background-color: rgb(228, 228, 222);
-    display: inline-block;
+    
     
 }
 
@@ -148,25 +168,16 @@ header nav div a img{
     width: 200px;
     height: 200px;
     
-}
+} 
+
+
 /*-------------PAGINA DE SERVICIOS-------*/
 
 
 
 
 
-/*-----------footer----------*/
-footer{
-    background: #f1dddd;
-    background: linear-gradient(90deg, #f1dddd 0%, #767070 80%);
-    background: -webkit-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
-    background: -moz-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
-}
 
-footer img{
-    width: 60px;
-    height: 60px;
-}
 
 /*------------------------- -------------*/
 
@@ -242,21 +253,6 @@ footer img{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.contact-ubic{
-    padding: 150px;
-    align-items: center;
-
-}
-
-.contact-wpp{
-    margin: 10px;
-}
-
-.contact-red{
-    padding: 30px;
-    grid-row: -3;
-
-}
 
 
 
@@ -288,4 +284,16 @@ footer img{
 
 /*-------- MEDIA QUERIES INDEX--------*/ 
 
-@media
+@media screen and (max-width: 701px) and (min-width: 300px){
+    .ofertas{
+        width: 600px;
+        height: 400px;
+
+    }
+    .footer{
+        
+        width: 100%;
+        height: 200px;
+        display: none;
+    }
+}

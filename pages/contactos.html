@@ -1,105 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <img src="../img/logo.jpeg" alt="logo">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contactos.html">Contacto</a></li>
-                <li><a href="./acercade.html">Acerca de nosotros</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container-fluid">
+                <img src="../img/logo.jpeg" alt="Logo">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./acercade.html">Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./servicios.html" tabindex="-1" aria-disabled="true">Servicios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header>           
-            <h1>REGISTRATE</h1>
+    </header>
+    <h1>REGISTRATE</h1>
 
-                <form action="">
+    <form action="">
         <ul>
             <section class="identify">
                 <div>
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="nombre">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="nombre">
                 </div>
-            <div>
-                <label for="Apellido">Apellido</label>
-                <input type="text" name="Apellido">
-            </div>
-            <div>
-                <label for="Email">Email</label>
-                <input type="email" name="email">
-            </div>
-            <div>
-                <label for="contrasena">Contrasena</label>
-                <input type="password" name="contrasena">
-            </div> 
-            <div>
-                <label for="Masculino">Masculino</label>
-                <input type="radio" name="masculino"> 
-            </div>
-            <div>
-                <label for="Femenino">Femenino</label>
-                <input type="radio"name="Femenino">
+                <div>
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" name="Apellido">
+                </div>
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="email" name="email">
+                </div>
+                <div>
+                    <label for="contrasena">Contrasena</label>
+                    <input type="password" name="contrasena">
+                </div>
+                <div>
+                    <label for="Masculino">Masculino</label>
+                    <input type="radio" name="masculino">
+                </div>
+                <div>
+                    <label for="Femenino">Femenino</label>
+                    <input type="radio" name="Femenino">
 
-            </div>
-            <div>
-                <label for="Otro">Otro</label>
-                <input type="radio" name="Otro">
-            </div>
-            <div>
-                <select name="" id="">Pais
-                    <option value="">Argentina</option> 
-                    <option value="">Brasil</option>
-                    <option value="">Espana</option>
-                    <option value="">Colombia</option>
-                    <option value="">Peru</option>
-                    <option value="">Uruguay</option>
-                </select>
-                
-            </div>
-            <div>
-                <p>Dejanos tu consulta</p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <input type="submit">
-                <input type="reset">
-            </div>
-            </form>
+                </div>
+                <div>
+                    <label for="Otro">Otro</label>
+                    <input type="radio" name="Otro">
+                </div>
+                <div>
+                    <select name="" id="">Pais
+                        <option value="">Argentina</option>
+                        <option value="">Brasil</option>
+                        <option value="">Espana</option>
+                        <option value="">Colombia</option>
+                        <option value="">Peru</option>
+                        <option value="">Uruguay</option>
+                    </select>
+
+                </div>
+                <div>
+                    <p>Dejanos tu consulta</p>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+    </form>
     </section>
     <section>
         <table>
-            
+
         </table>
     </section>
-</ul>
+    </ul>
 
 
-    <footer> 
-        
+    <footer>
+
         <div class="coMunicacion">
-                <p>ACERCATE A NUESTRO SHOWROOM</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.790238425772!2d-58.4537929850353!3d-34.60946536530878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1a9d4e2e55%3A0xef81a75814cc8ea1!2sPujol%201150%2C%20C1416%20CIB%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656867095102!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>ACERCATE A NUESTRO SHOWROOM</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.790238425772!2d-58.4537929850353!3d-34.60946536530878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1a9d4e2e55%3A0xef81a75814cc8ea1!2sPujol%201150%2C%20C1416%20CIB%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656867095102!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-            Envianos tu consulta 
-            <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt=""></a>
-                
-        </div> 
+        Envianos tu consulta
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt=""></a>
+
+        </div>
         <div>
-            <h2>Nuestras Redes</h2> 
+            <h2>Nuestras Redes</h2>
             <div>
                 <a href="https://instagram.com" target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
                 <a href="https://facebook.com" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
             </div>
         </div>
-        
+
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

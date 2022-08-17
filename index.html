@@ -1,87 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Luca Indumentaria</title>
-    </head>
+</head>
+
 <body>
-    <header>  
-        <img src="./img/logo.jpeg" alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</i></a></li>
-                <li><a href="./pages/productos.html">Productos </a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/contactos.html">Contactos</a></li> 
-                <li><a href="./pages/acercade.html">Acerca de Nosotros</a></li>  
-            </ul> 
-                <div>
-                Mi Compra 
-                <img src="./img/carrito-de-compras.png" alt="">
+    <header>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container-fluid">
+                <img src="../img/logo.jpeg" alt="Logo">
+                <a class="navbar-brand" href="./index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/acercade.html">Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./pages/servicios.html" tabindex="-1" aria-disabled="true">Servicios</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
         </nav>
-    </header> 
-    <main> 
-        <section class="hero">
-            <h1>K.O Indumentaria</h1> 
-                <div class="hero_banner"> 
-                    <img src="" alt="">
-                </div> 
-                <div id="twins">
-                    <img src="" alt="">
-                </div>
-                <div id="twins">
-                    <img src="" alt="">
-                </div>
-        </section> 
-    <section class="ofertas">
+    </header>
+    <main>
+        <section class="ofertas-banner">
+            <h1>K.O Indumentaria</h1>
+            <div class="hero_banner">
+                <img src="" alt="">
+            </div>
+            <div id="twins">
+                <img src="" alt="">
+            </div>
+            <div id="twins">
+                <img src="" alt="">
+            </div>
+        </section>
+        <section class="ofertas">
             <h2>Nuevos Ingresos</h2>
             <div>
                 <div>
-                        <img src="./img/remeravenum.webp" alt="Remera Venum"> 
-                        <h3>Remera Venum Black</h3> 
-                        <a href="">Comprar</a> 
-                    </div>
-                    <div>
-                        <img src="./img/remerados.webp" alt="">
-                        <h3>Remera Muay thai</h3>
-                        <a href="">Comprar</a>
-                    </div> 
-                    <div>
-                        <img src="" alt="">
-                        <h3></h3>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                        <h3></h3>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                        <h3></h3>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <img src="img/remeratres.png" alt="">
-                        <h3>Remera Bjj</h3> 
-                        <a href="">Comprar</a>
-                    </div>
-                </div> 
-                
-    </section>
-</main>
-        <footer> 
-            <div>
-            <h3>Nuestras Redes</h3>
+                    <img src="./img/remeravenum.webp" alt="Remera Venum">
+                    <h3>Remera Venum Black</h3>
+                    <a href="">Comprar</a>
+                </div>
+                <div>
+                    <img src="./img/remerados.webp" alt="">
+                    <h3>Remera Muay thai</h3>
+                    <a href="">Comprar</a>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h3></h3>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h3></h3>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h3></h3>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <img src="img/remeratres.png" alt="">
+                    <h3>Remera Bjj</h3>
+                    <a href="">Comprar</a>
+                </div>
             </div>
-            <div>
-                
-                <a href="https://facebook.com/" target="_blank " class="logo"><img src="./img/facebook.png" alt=""></a>
-                <a href="https://instagram.com/" target="_blank" class="logo"><img src="./img/instagram.png" alt=""></a>
-        </footer>
+
+        </section>
+    </main>
+    <footer class="pie">
+        <div>
+            <h3>Nuestras Redes</h3>
+        </div>
+        <div>
+
+            <a href="https://facebook.com/" target="_blank " class="logo"><img src="./img/facebook.png" alt=""></a>
+            <a href="https://instagram.com/" target="_blank" class="logo"><img src="./img/instagram.png" alt=""></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

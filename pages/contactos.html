@@ -1,136 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
-
 <body>
-    <header class="cab">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href=""><img src="../img/logo.jpeg" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse show justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                        <a class="nav-link" href="./servicios.html">Servicios</a>
-                        <a class="nav-link" href="./acercade.html">Acerca de nosotros</a>
-                        <a class="nav-link" href="./productos.html">Productos</a>
-                        <a class="nav-link" href="./contactos.html" tabindex="-1" aria-disabled="true">Contactos</a>
-                    </div>
-                </div>
-            </div>
+    <header>
+        <nav>
+            <img src="../img/logo.jpeg" alt="logo">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./contactos.html">Contacto</a></li>
+                <li><a href="./acercade.html">Acerca de nosotros</a></li>
         </nav>
-    </header>
-    <h1 class="identify-titulo">REGISTRATE</h1>
+    </header>           
+            <h1>REGISTRATE</h1>
 
-    <form class="identify" action="">
+                <form action="">
         <ul>
-            <section>
+            <section class="identify">
                 <div>
-                    <label for="Nombre">Nombre</label>
-                    <input type="text" name="nombre">
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="nombre">
                 </div>
-                <div>
-                    <label for="Apellido">Apellido</label>
-                    <input type="text" name="Apellido">
-                </div>
-                <div>
-                    <label for="Email">Email</label>
-                    <input type="email" name="email">
-                </div>
-                <div>
-                    <label for="contrasena">Contrasena</label>
-                    <input type="password" name="contrasena">
-                </div>
-                <div>
-                    <label for="Masculino">Masculino</label>
-                    <input type="radio" name="masculino">
-                </div>
-                <div>
-                    <label for="Femenino">Femenino</label>
-                    <input type="radio" name="Femenino">
-
-                </div>
-                <div>
-                    <label for="Otro">Otro</label>
-                    <input type="radio" name="Otro">
-                </div>
-                <div>
-                    <select name="" id="">Pais
-                        <option value="">Argentina</option>
-                        <option value="">Brasil</option>
-                        <option value="">Espana</option>
-                        <option value="">Colombia</option>
-                        <option value="">Peru</option>
-                        <option value="">Uruguay</option>
-                    <div>
-                    <p>Dejanos tu consulta</p>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="submit">
-                    <input type="reset">
-                </div>
-                    </select>
-
-                </div>
-                <div>
-                    <p>Dejanos tu consulta</p>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="submit">
-                    <input type="reset">
-                </div>
-    </form>
-    </section>
-
-    </ul>
-    <main>
-        <div>
-            <div class="contact-ubic">
-                <p>ACERCATE A NUESTRO SHOWROOM</p>
-                <iframe class="contact-iframe"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.790238425772!2d-58.4537929850353!3d-34.60946536530878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1a9d4e2e55%3A0xef81a75814cc8ea1!2sPujol%201150%2C%20C1416%20CIB%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656867095102!5m2!1ses-419!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+                <label for="Apellido">Apellido</label>
+                <input type="text" name="Apellido">
             </div>
+            <div>
+                <label for="Email">Email</label>
+                <input type="email" name="email">
+            </div>
+            <div>
+                <label for="contrasena">Contrasena</label>
+                <input type="password" name="contrasena">
+            </div> 
+            <div>
+                <label for="Masculino">Masculino</label>
+                <input type="radio" name="masculino"> 
+            </div>
+            <div>
+                <label for="Femenino">Femenino</label>
+                <input type="radio"name="Femenino">
+
+            </div>
+            <div>
+                <label for="Otro">Otro</label>
+                <input type="radio" name="Otro">
+            </div>
+            <div>
+                <select name="" id="">Pais
+                    <option value="">Argentina</option> 
+                    <option value="">Brasil</option>
+                    <option value="">Espana</option>
+                    <option value="">Colombia</option>
+                    <option value="">Peru</option>
+                    <option value="">Uruguay</option>
+                </select>
+                
+            </div>
+            <div>
+                <p>Dejanos tu consulta</p>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit">
+                <input type="reset">
+            </div>
+            </form>
+    </section>
+    <section>
+        <table>
+            
+        </table>
+    </section>
+</ul>
+
+
+    <footer> 
+        
+        <div class="coMunicacion">
+                <p>ACERCATE A NUESTRO SHOWROOM</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.790238425772!2d-58.4537929850353!3d-34.60946536530878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1a9d4e2e55%3A0xef81a75814cc8ea1!2sPujol%201150%2C%20C1416%20CIB%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656867095102!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </main>
-
-
-    <footer class="contact-foot">
-
-        <a class="contact-wpp" href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png"
-                alt="">Envianos tu consulta</a>
-
-        </div>
+            Envianos tu consulta 
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png" alt=""></a>
+                
+        </div> 
         <div>
-
-            <div class="contact-red">
-                <h2>Nuestras Redes</h2>
+            <h2>Nuestras Redes</h2> 
+            <div>
                 <a href="https://instagram.com" target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
                 <a href="https://facebook.com" target="_blank"><img src="../img/facebook.png" alt="Facebook"></a>
             </div>
         </div>
-        </div>
+        
     </footer>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
 </body>
-
 </html>

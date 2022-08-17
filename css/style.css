@@ -1,302 +1,214 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima&family=Gentium+Book+Plus:ital@0;1&family=Poppins:wght@200;300;400&family=Roboto+Condensed:ital,wght@0,300;1,300;1,400&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*-------header-INDEX-----*/ 
-
-
-
-
-.container-fluid{
-    background: linear-gradient(16deg, rgb(4, 63, 4), rgba(0, 128, 0, 0.312));
-    width: 100%;
-    height: 300px;
+*{
+    margin: 0px;
+    padding: 0px; 
     
 }
-.container-fluid a img{
-    width: 150px;
+
+/*-------header-INDEX-----*/  
+header{
+    background-color: hsl(226, 32%, 65%);
+    padding: 20px; 
+    
+} 
+
+header img{
+    width: 200px;
+    height: 200px;
+    
+} 
+header nav ul{
+    list-style: none;
+}
+    header nav ul li{
+    display: inline-block;
+    margin: 10px;
 }
 
-
-.navbar-nav{
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(247, 247, 255);
     font-size: 20px;
+    font-weight: 900;
+} 
+
+header nav div {
+    list-style: none;
+    text-align: end;
+
+} 
+header nav div img{
+    width: 50px;
+    height: 50px; 
+    margin-right: 25px;
 }
 
-.banner{
-    width: 400px;
-    height: 500px;
-}
+
 
 /*------cards--------*/
-
-.ofertas{
-    display: flex;
-    width: 100%;
+.ofertas div div{
+    width: 300px;
     height: 400px;
-    flex-wrap: wrap-reverse;
-}
-
-
-
-
-
-.ofertas div{
-    width: 250px;
-    height: 150px; 
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    border: 1px solid grey;
+    margin: 20px 10px 15px 20px;
+    background-color: rgb(228, 228, 222);
+    text-align: center; 
+    border-radius: 15px ; 
+    display: inline-block; 
+    padding: 5px;
+    border-radius: 15px;
     
+    
+
 }
 
-.ofertas div img{
-    width: 150px;
-    height: 150px; 
-    align-items: center;
-    object-fit: contain;
+.ofertas div div img{
+    width: 300px;
+    height: 300px; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}  
+
+.ofertas div div h3{
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align: center;
 }
 
+.ofertas div div a{
+    text-decoration: none;
+    color: rgb(106, 106, 117);
+    background-color: rgb(240, 96, 120);
+    padding: 2px;
+    border-radius: 5px;
+    background-color: beige;
+    padding: 5px;
+    
+} 
 
 
 
-footer{
-    background: #f1dddd;
-    background: linear-gradient(90deg, #f1dddd 0%, #767070 80%);
-    background: -webkit-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
-    background: -moz-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
+/*---------main-------*/ 
+
+/*--------------------------------secciondebanners de marcas a trabajar-----*/
+.hero{
     width: 100%;
-    height: 200px;
-}
-
-footer img{
-    width: 60px;
-    height: 60px;
-}
-
-/*------------------PAGINA PRODUCTOS----------------*/
-
-
-.productos{
-    width: 100%;
-    height: 100%;
-    display:grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 300px 300px 300px;
-}
+    height: 100vh;
+    background-image: url(../img/venumbanner.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: none;
+    color: rgb(233, 126, 4);
+    margin: 0; 
+    
+} 
 
 
+
+
+/*-titulo-------------*/
+
+
+
+
+.hero h1{
+    font-size: 100px;
+    font-weight: 300px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 10px; 
+    color: rgb(25, 50, 187);
+    position: relative;
+    
+    
+} 
+
+/*------------------cartasdeproductos------*/ 
 .productos div{
     width: 300px;
-    height: 300px;
+    height: 400%; 
     border: 1px solid;
+    margin: 20px 15px 10px 15px;
+    margin-bottom: 10px;
+    padding: 20px;
     text-align: center;
+    display: inline-block;
     border-radius: 15px;
     background-color: beige;
-    
 }
+.productos div h3{
+    
+    font-size: 25px; 
+    padding: 5px;
+    
+} 
 
-
-
-.productos div div{
-    border-radius: 15px;
+.productos div img{
+    width: 300px;
+    height: 300px; 
+    margin: 10px 10px 15px 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+    border-radius: 15px; 
     background-color: rgb(228, 228, 222);
-    
+    display: inline-block;
     
 }
 
-.productos div div img{
+
+
+.productos div a{
+    text-decoration: none;
+    color: rgb(106, 106, 117);
+    background-color:rgb(240, 96, 120);
+    padding: 2px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*-----------CONTACTO----*/ 
+header{
+    background-color: hsl(226, 32%, 65%);
+    padding: 20px; 
+    
+} 
+
+header img{
     width: 200px;
     height: 200px;
     
 } 
 
-
-/*-------------PAGINA DE SERVICIOS-------*/
-
-.backoffice{
-    width: 100%;
-    height: 500px;
-}
-
-
-.foot-serv{
-    background: #f1dddd;
-    background: linear-gradient(90deg, #f1dddd 0%, #767070 80%);
-    background: -webkit-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
-    background: -moz-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
-}
-
-
-
-/*------------------------- -------------*/
-
-
-
-/*------------------  PAGINA CONTACTOS -------------------- */
-
-.cab{
-    width: 100%;
-    font-size: 800px;
-
-}
-
-.cab-nav {
-    width: 100%;
-    background: rgba(101, 90, 90, 0.96);
-    background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    background: -moz-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    margin: 5px;
-    font-family: "Poppins", sans-serif;
-    color: whitesmoke;
-    display: flex;
-    align-content: flex-start;
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-
-
-.cab-nav img{
-    width: 300px;
-    max-height: 300px;
-
-
-}
-
-.cab-nav ul{
-    font-size: 30px;
-    text-decoration: none;
-    text-align: end;
-}
-
-.cab-nav ul li{
-    list-style: none;
+    header nav ul li{
     display: inline-block;
-    justify-content: center;
-    margin-top: 20px;
-    padding: 30px;
-    flex-direction: column-reverse;
+    margin: 10px;
 }
 
-
-.identify{
-    border: solid rgb(0, 0, 0) 2px;
-    width: 600px;
-    height: 500px;
-    margin-bottom: 10px;
-    padding: 10px;
-    
-
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(247, 247, 255);
+    font-size: 20px;
+    font-weight: 900;
 } 
 
 
 
-.contact-iframe{
-    width: 300px;
-    height: 200px;
+
+
+
+
+
+/*-----------footer----------*/
+footer{
+    background-color:rgba(17, 15, 15, 0.253);
 }
-
-
-.identify-titulo{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}  
-
-
-/*----contacto footer*/
-
-.contact-foot{
-    width: 100%;
-    height: 300px;
-}
-
-
-
-
-/*----------acerca*/
-
-
-
-
-
-
-
-
-
-/*-------- MEDIA QUERIES INDEX--------*/ 
-
-@media screen and (max-width: 599px){
-    .ofertas{
-        width: 600px;
-        height: 400px;
-        padding: 0;
-        flex-wrap: wrap;
-
-    }
     
+footer img{
+    width: 80px;
+    height: 80px;
 } 
-
-@media screen and (max-width: 595px){
-    .ofertas{
-        flex-direction: column 1;
-    }
-
-}
-
-@media screen and (max-width: 367px){ 
-    .productos h2{
-        display: none;
-    }
-    .cont-tres{
-        display: none;
-    }
-} 
-
-@media screen and (max-width :1039px)and (min-width :300px){
-    .ofertas{
-        height: 700px;
-    }
-    .card-tres{
-        flex-wrap: nowrap;
-    }
-    .card-cuatro{
-        flex-wrap: nowrap;
-    } 
-    main{
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .footer{
-        display: none;
-    }
-} 
-
-
-@media screen and (max-width:611px) and (min-width: 300px){
-    
-    .banner-card{
-        max-width: 300px;
-        padding: 10px;
-    }
-    
-    .banner-imgbox{
-        width: 100%;
-        padding: 10px;
-    }
-    .banner-imgtwins{
-        display: none;
-        padding: 10px;
-
-    }
-} 
-
-
-/*------Contactos*/ 
-
 

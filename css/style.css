@@ -8,14 +8,17 @@
 
 /*-------header-INDEX-----*/ 
 
-header nav div a img{
-    width: 200px;
-    height: 200px;
-}
+
 
 
 .container-fluid{
     background: linear-gradient(16deg, rgb(4, 63, 4), rgba(0, 128, 0, 0.312));
+    width: 100%;
+    height: 300px;
+    
+}
+.container-fluid a img{
+    width: 150px;
 }
 
 
@@ -23,79 +26,18 @@ header nav div a img{
     font-size: 20px;
 }
 
-
-
-
-
-
-
-
-
-/*------------------seccion de banners----------------------------*/
-.main{
-    width: 600px;
-    height: 600px;
-    margin: 0;
+.banner{
+    width: 400px;
+    height: 500px;
 }
-.banner{ 
-    background: rgba(28, 74, 34, 0.164);
-    background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-    
-} 
-
-
-.banner-tittle{
-    text-align: center;
-    padding: 30px;
-}
-
-
-
-.banner-card img{
-    width: 500px;
-    height: 300px;
-
-}
-
-.banner-imgvenum{
-    width: 100%;
-    height: 300px;
-    margin: 0px;
-    border-radius: 40px 40px 40px 40px;
-    -webkit-border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px;
-
-}
-
-.banner-imgtwins{
-    width: 100%;
-    height: 300px;
-    margin: 0px;
-    border-radius: 40px 40px 40px 40px;
-    -webkit-border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px;
-}
-
-.banner-imgbox{
-    width: 100%;
-    height: 300px;
-    margin: 0px;
-    border-radius: 40px 40px 40px 40px;
-    -webkit-border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px;
-}
-
-
 
 /*------cards--------*/
 
 .ofertas{
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    height: 500px;
-    margin: 0;
+    height: 400px;
+    flex-wrap: wrap-reverse;
 }
 
 
@@ -104,7 +46,7 @@ header nav div a img{
 
 .ofertas div{
     width: 250px;
-    height: 350px; 
+    height: 150px; 
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -115,7 +57,7 @@ header nav div a img{
     width: 150px;
     height: 150px; 
     align-items: center;
-    
+    object-fit: contain;
 }
 
 
@@ -126,6 +68,8 @@ footer{
     background: linear-gradient(90deg, #f1dddd 0%, #767070 80%);
     background: -webkit-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
     background: -moz-linear-gradient(90deg, #f1dddd 0%, #767070 80%);
+    width: 100%;
+    height: 200px;
 }
 
 footer img{
@@ -178,9 +122,7 @@ footer img{
     height: 500px;
 }
 
-.resena{
-    text-align: center;
-}
+
 .foot-serv{
     background: #f1dddd;
     background: linear-gradient(90deg, #f1dddd 0%, #767070 80%);
@@ -197,8 +139,8 @@ footer img{
 /*------------------  PAGINA CONTACTOS -------------------- */
 
 .cab{
-    width: 100vw;
-    font-size: 300;
+    width: 100%;
+    font-size: 800px;
 
 }
 
@@ -245,13 +187,15 @@ footer img{
 
 .identify{
     border: solid rgb(0, 0, 0) 2px;
-    width: 400px;
-    height: 400px;
-    margin: 10px;
-    padding: px;
-    justify-content: center;
+    width: 600px;
+    height: 500px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
 
-}
+} 
+
+
 
 .contact-iframe{
     width: 300px;
@@ -265,59 +209,94 @@ footer img{
 }  
 
 
+/*----contacto footer*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* FOOTER CONTACTOS */
-
-
-
-
-
-
-
-
-
-.contact-wpp{
-    align-items: center;
+.contact-foot{
+    width: 100%;
+    height: 300px;
 }
+
+
+
+
+/*----------acerca*/
+
+
+
+
+
 
 
 
 
 /*-------- MEDIA QUERIES INDEX--------*/ 
 
-@media screen and (max-width: 701px) and (min-width: 300px){
+@media screen and (max-width: 599px){
     .ofertas{
         width: 600px;
         height: 400px;
+        padding: 0;
+        flex-wrap: wrap;
 
     }
+    
+} 
+
+@media screen and (max-width: 595px){
+    .ofertas{
+        flex-direction: column 1;
+    }
+
+}
+
+@media screen and (max-width: 367px){ 
+    .productos h2{
+        display: none;
+    }
+    .cont-tres{
+        display: none;
+    }
+} 
+
+@media screen and (max-width :1039px)and (min-width :300px){
+    .ofertas{
+        height: 700px;
+    }
+    .card-tres{
+        flex-wrap: nowrap;
+    }
+    .card-cuatro{
+        flex-wrap: nowrap;
+    } 
+    main{
+        margin-left: 0;
+        margin-right: 0;
+    }
     .footer{
-        
-        width: 100%;
-        height: 200px;
         display: none;
     }
 } 
 
 
-@media screen and (max-width: 367px){ 
-    .productos h2{
-        text-align: end;
+@media screen and (max-width:611px) and (min-width: 300px){
+    
+    .banner-card{
+        max-width: 300px;
+        padding: 10px;
     }
-    .cont-tres{
+    
+    .banner-imgbox{
+        width: 100%;
+        padding: 10px;
+    }
+    .banner-imgtwins{
         display: none;
+        padding: 10px;
+
     }
-}
+} 
+
+
+/*------Contactos*/ 
+
+

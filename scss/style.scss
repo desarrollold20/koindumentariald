@@ -1,0 +1,246 @@
+header .container-fluid {
+    background: linear-gradient(16deg, rgb(4, 63, 4), rgba(0, 128, 0, 0.312));
+    width: 100%;
+    height: 200px;
+
+    a img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .nav-link {
+        font-size: 30px;
+    }
+}
+
+main {
+    .banner {
+        background: rgba(28, 74, 34, 0.164);
+        background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
+        background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
+
+        .banner-tittle {
+            text-align: center;
+            padding: 50px;
+            color: rgb(255, 0, 0);
+        }
+
+        .banner-card img {
+            width: 500px;
+            height: 300px;
+        }
+
+        .banner-imgvenum {
+            width: 100%;
+            height: 300px;
+            margin: 2px;
+            border-radius: 40px 40px 40px 40px;
+            -webkit-border-radius: 40px 40px 40px 40px;
+            -moz-border-radius: 40px 40px 40px 40px;
+        }
+
+        .banner-imgtwins {
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            border-radius: 40px 40px 40px 40px;
+            -webkit-border-radius: 40px 40px 40px 40px;
+            -moz-border-radius: 40px 40px 40px 40px;
+        }
+
+        .banner-imgbox {
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            border-radius: 40px 40px 40px 40px;
+            -webkit-border-radius: 40px 40px 40px 40px;
+            -moz-border-radius: 40px 40px 40px 40px;
+        }
+    }
+
+    .ofertas {
+        width: 100%;
+        height: 700px;
+        text-align: center;
+        background-color: beige;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 400px 400px 400px 400px;
+
+        div {
+            padding: 10px;
+            margin: 10px;
+            width: 350px;
+            height: 300px;
+        }
+
+        img {
+            width: 250px;
+            height: 200px;
+        }
+
+        a:hover {
+            color: black;
+        }
+    }
+}
+
+.pie-index {
+    background: rgba(101, 90, 90, 0.96);
+    background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
+    background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
+    background: -moz-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
+    width: 100%;
+    height: 200px;
+
+        h3 {
+            font-size: 30px;
+            width: 20px;
+            color: rgb(72, 89, 89)
+        }
+            img {
+            width: 60px;
+            height: 60px;
+            }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------PAGINA DE CONTACTOS-*/
+
+.cab {
+    width: 100vw;
+    font-size: 300;
+
+    .cab-nav {
+        width: 100%;
+        background: rgba(101, 90, 90, 0.96);
+        background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
+        background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
+        background: -moz-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
+        margin: 5px;
+        font-family: "Poppins", sans-serif;
+        color: whitesmoke;
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        img {
+            width: 300px;
+            max-height: 300px;
+        }
+
+        ul {
+            font-size: 30px;
+            text-decoration: none;
+            text-align: end;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 30px;
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.identify {
+    border: solid rgb(0, 0, 0) 2px;
+    width: 600px;
+    height: 600px;
+    align-items: center;
+
+    .identify-titulo {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+.contact-iframe {
+    width: 300px;
+    height: 200px
+}
+
+.contac-ubic {
+    padding: 150px;
+    align-items: center;
+}
+
+.contact-wpp {
+    color: black;
+}
+
+.contact-red {
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1::first-letter {
+    color: black;
+    font-size: 60px;
+}
+
+.ofertas div a::before {
+    content: "🛒";
+
+
+}
+
+.ofertas div a:hover {
+    color: black;
+
+}
+
+input {
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid red;
+    border-radius: 5px;
+}

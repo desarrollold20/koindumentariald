@@ -1,0 +1,16 @@
+@import "../base/variables";
+
+.container-fluid {
+
+    background: linear-gradient(16deg, rgb(4, 63, 4), rgba(0, 128, 0, 0.312));
+    width: 100%;
+
+    a img {
+        width: 200px;
+        height: 150px;
+    }
+
+    a{
+        font-size: 30px;
+    }
+}

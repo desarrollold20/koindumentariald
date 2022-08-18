@@ -11,6 +11,7 @@
 header{
     display: flex;
     height: 100%;
+    background: linear-gradient(16deg, rgb(4, 63, 4), rgba(0, 128, 0, 0.312));
 }
 
 header nav div a img{
@@ -21,9 +22,6 @@ header nav div a img{
 
 
 .container-fluid{
-    background: linear-gradient(16deg, rgb(4, 63, 4), rgba(0, 128, 0, 0.312));
-    
-    
     
 }
 

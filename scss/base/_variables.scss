@@ -1,3 +1,8 @@
-$color-verde: rgb(4, 63, 4);
-$color-negro: rgba(12, 12, 7, 0.856)
 
+$color-negro: rgba(12, 12, 7, 0.856)
+$color-principal red;
+$color-secundario: green;
+
+a{
+    color: $color-negro
+}

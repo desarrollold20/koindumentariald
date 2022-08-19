@@ -4,14 +4,20 @@
   padding: 0;
   box-sizing: border-box; }
 
+header {
+  width: 100%;
+  height: 20vh; }
+
 .container-fluid {
-  background: linear-gradient(16deg, #043f04, rgba(0, 128, 0, 0.312));
-  width: 100%; }
+  background: linear-gradient(16deg, #043f04, rgba(0, 128, 0, 0.312)); }
   .container-fluid a img {
-    width: 200px;
-    height: 150px; }
+    width: 200px; }
   .container-fluid a {
     font-size: 30px; }
+
+.main {
+  width: 100%;
+  height: 70vh; }
 
 .banner {
   background: rgba(28, 74, 34, 0.164);
@@ -19,37 +25,25 @@
   background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%); }
   .banner .banner-tittle {
     text-align: center;
-    padding: 20px;
+    font-size: 30px;
     color: red; }
   .banner .banner-card img {
-    width: 400px;
-    height: 300px; }
+    width: 300px; }
   .banner .banner-imgvenum {
     width: 100%;
-    height: 200px;
-    margin: 2px;
     border-radius: 40px 40px 40px 40px;
     -webkit-border-radius: 40px 40px 40px 40px;
     -moz-border-radius: 40px 40px 40px 40px;
     object-fit: contain; }
   .banner .banner-imgtwins {
     width: 100%;
-    height: 300px;
-    margin: 0px;
     border-radius: 40px 40px 40px 40px;
     -webkit-border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px; }
-  .banner .banner-imgbox {
-    width: 100%;
-    height: 300px;
-    margin: 0px;
-    border-radius: 40px 40px 40px 40px;
-    -webkit-border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px; }
+    -moz-border-radius: 40px 40px 40px 40px;
+    object-fit: cover; }
 
 .ofertas {
   width: 100%;
-  height: 400px;
   text-align: center;
   background-color: beige;
   display: grid;
@@ -72,69 +66,12 @@
   background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
   background: -moz-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
   width: 100%;
-  max-height: 300px; }
+  height: 30vh; }
   .pie-index h3 {
     font-size: 30px;
     width: 20px;
+    height: 5vh;
     color: #485959; }
   .pie-index img {
     width: 60px;
-    height: 60px; }
-
-main
-.banner {
-  background: rgba(28, 74, 34, 0.164);
-  background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
-  background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%); }
-  main
-.banner .banner-tittle {
-    text-align: center;
-    padding: 50px;
-    color: red; }
-  main
-.banner .banner-card img {
-    width: 500px;
-    height: 300px; }
-  main
-.banner .banner-imgvenum {
-    width: 100%;
-    height: 300px;
-    margin: 2px;
-    border-radius: 40px 40px 40px 40px;
-    -webkit-border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px; }
-  main
-.banner .banner-imgtwins {
-    width: 100%;
-    height: 300px;
-    margin: 0px;
-    border-radius: 40px 40px 40px 40px;
-    -webkit-border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px; }
-  main
-.banner .banner-imgbox {
-    width: 100%;
-    height: 300px;
-    margin: 0px;
-    border-radius: 40px 40px 40px 40px;
-    -webkit-border-radius: 40px 40px 40px 40px;
-    -moz-border-radius: 40px 40px 40px 40px; }
-
-.ofertas {
-  width: 100%;
-  height: 700px;
-  text-align: center;
-  background-color: beige;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 400px 400px; }
-  .ofertas div {
-    padding: 10px;
-    margin: 10px;
-    width: 350px;
-    height: 300px; }
-  .ofertas img {
-    width: 250px;
-    height: 200px; }
-  .ofertas a:hover {
-    color: black; }
+    height: 6vh; }

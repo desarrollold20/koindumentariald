@@ -5,8 +5,7 @@
   box-sizing: border-box; }
 
 header {
-  width: 100%;
-  height: 30vh; }
+  width: 100%; }
 
 .container-fluid {
   background: linear-gradient(16deg, #043f04, rgba(0, 128, 0, 0.312)); }
@@ -16,6 +15,9 @@ header {
     font-size: 30px; }
 
 .arriba {
+  width: 100%; }
+
+.cab {
   width: 100%; }
 
 .main {
@@ -54,11 +56,9 @@ header {
   .ofertas div {
     padding-top: 10px;
     margin: 10px;
-    width: 350px;
-    height: 300px; }
+    width: 350px; }
   .ofertas img {
-    width: 250px;
-    height: 200px; }
+    width: 250px; }
   .ofertas a:hover {
     color: rgba(12, 12, 7, 0.856); }
 
@@ -118,9 +118,15 @@ header {
   .pie-index h3 {
     font-size: 20px;
     width: 30px;
-    height: 5vh;
-    color: #485959;
-    padding: 5px; }
+    color: #485959; }
   .pie-index img {
-    width: 40px;
-    height: 6vh; }
+    width: 40px; }
+
+.pie-servicios {
+  background: rgba(101, 90, 90, 0.96);
+  background: linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
+  background: -webkit-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
+  background: -moz-linear-gradient(16deg, rgba(101, 90, 90, 0.96) 0%, #a9c3a9 80%);
+  width: 100%; }
+  .pie-servicios img {
+    width: 40px; }
